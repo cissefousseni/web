@@ -6,9 +6,6 @@
   padding: 20px;
 }
 
-
-
-
 * {
   box-sizing: border-box;
 }
@@ -66,7 +63,8 @@ footer {
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
-  nav, article {
+  nav,
+  article {
     width: 100%;
     height: auto;
   }
@@ -94,3 +92,20 @@ footer {
     <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
   </article>
 </section>
+/* Add a gray background color and some padding to the footer */
+    footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  min-height: 200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
+}
